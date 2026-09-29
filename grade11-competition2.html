@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TUG & WAR — XI კლასი — შეჯიბრი 2</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <header class="game-header">
+
+            <div class="game-brand">
+
+                <img
+                    src="img/tug.png"
+                    alt="Tug & War"
+                    class="game-logo"
+                >
+
+                <div class="game-title">
+
+                    <span>XI კლასი</span>
+
+                    <h1>შეჯიბრი 2</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="game-controls">
+
+                <div class="question-counter">
+
+                    კითხვა
+                    <strong id="question-number">1</strong>
+                    / 6
+
+                </div>
+
+
+                <div class="timer">
+
+                    <span id="timer">15</span>
+
+                </div>
+
+
+                <button
+                    id="fullscreen-btn"
+                    class="control-btn"
+                    type="button"
+                >
+                    ⛶ სრულ ეკრანზე
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <main class="game-board">
+
+            <!-- =====================================================
+                 I ჯგუფი
+            ====================================================== -->
+
+            <section class="team team-left">
+
+                <div class="team-header">
+
+                    <span class="team-number">
+                        01
+                    </span>
+
+                    <h2>
+                        I ჯგუფი
+                    </h2>
+
+                </div>
+
+
+                <div class="team-score">
+
+                    <span id="score-left">
+                        0
+                    </span>
+
+                    <small>
+                        სწორი პასუხი
+                    </small>
+
+                </div>
+
+
+                <div
+                    class="answer-status"
+                    id="status-left"
+                >
+                    მზად ხართ?
+                </div>
+
+
+                <div
+                    class="answers"
+                    id="answers-left"
+                >
+                    <!-- პასუხები ჩაიტვირთება JavaScript-ით -->
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+                 ცენტრი
+            ====================================================== -->
+
+            <section class="game-center">
+
+                <div class="question-area">
+
+                    <span class="question-label">
+                        QUESTION
+                    </span>
+
+                    <h2 id="question-text">
+                        კითხვა ჩაიტვირთება...
+                    </h2>
+
+                </div>
+
+
+                <div class="rope-area">
+
+                    <div class="rope-line">
+
+                        <div class="rope-left"></div>
+
+
+                        <div
+                            class="rope-marker"
+                            id="rope-marker"
+                        >
+                            <span>◆</span>
+                        </div>
+
+
+                        <div class="rope-right"></div>
+
+                    </div>
+
+
+                    <div class="rope-labels">
+
+                        <span>
+                            I ჯგუფი
+                        </span>
+
+                        <span>
+                            II ჯგუფი
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="round-status"
+                    id="round-status"
+                >
+                    ორივე ჯგუფი მზად არის
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+                 II ჯგუფი
+            ====================================================== -->
+
+            <section class="team team-right">
+
+                <div class="team-header">
+
+                    <span class="team-number">
+                        02
+                    </span>
+
+                    <h2>
+                        II ჯგუფი
+                    </h2>
+
+                </div>
+
+
+                <div class="team-score">
+
+                    <span id="score-right">
+                        0
+                    </span>
+
+                    <small>
+                        სწორი პასუხი
+                    </small>
+
+                </div>
+
+
+                <div
+                    class="answer-status"
+                    id="status-right"
+                >
+                    მზად ხართ?
+                </div>
+
+
+                <div
+                    class="answers"
+                    id="answers-right"
+                >
+                    <!-- პასუხები ჩაიტვირთება JavaScript-ით -->
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer class="game-footer">
+
+            <div>
+
+                <span class="footer-label">
+                    TUG & WAR
+                </span>
+
+            </div>
+
+
+            <div id="result-message">
+                უპასუხეთ კითხვას რაც შეიძლება სწრაფად
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- =========================================================
+         QUESTIONS
+    ========================================================== -->
+
+    <script src="js/questions11-2.js"></script>
+
+
+    <!-- =========================================================
+         GAME LOGIC
+    ========================================================== -->
+
+    <script src="js/competition2-11.js"></script>
+
+</body>
+
+</html>
